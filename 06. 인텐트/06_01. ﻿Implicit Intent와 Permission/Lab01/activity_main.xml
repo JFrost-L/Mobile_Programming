@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전화걸기"
+        app:layout_constraintBottom_toTopOf="@+id/btnMsg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="문자보내기"
+        app:layout_constraintBottom_toTopOf="@+id/btnWeb"
+        app:layout_constraintStart_toStartOf="@+id/btnCall"
+        app:layout_constraintTop_toBottomOf="@+id/btnCall" />
+
+    <Button
+        android:id="@+id/btnWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="네이버"
+        app:layout_constraintBottom_toTopOf="@+id/btnMap"
+        app:layout_constraintStart_toStartOf="@+id/btnMap"
+        app:layout_constraintTop_toBottomOf="@+id/btnMsg" />
+
+    <Button
+        android:id="@+id/btnMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="맵"
+        app:layout_constraintBottom_toTopOf="@+id/btnCamera"
+        app:layout_constraintStart_toStartOf="@+id/btnCamera"
+        app:layout_constraintTop_toBottomOf="@+id/btnWeb" />
+
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="카메라"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMap" />
+</androidx.constraintlayout.widget.ConstraintLayout>
